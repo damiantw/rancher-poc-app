@@ -15,6 +15,8 @@ $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
 
+$app->useEnvironmentPath(base_path('environment'));
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
