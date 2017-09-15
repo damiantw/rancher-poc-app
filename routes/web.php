@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    dd(request());
+    echo 'Config Cached: '.(bool) file_exists(app()->getCachedConfigPath()).'<br/>';
+    echo 'Config Dump<br/>';
+    dump(config());
+    echo 'App Dump<br/>';
+    dump(app());
+    echo 'Request Dump<br/>';
+    dump(request());
+
 });
