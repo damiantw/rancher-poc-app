@@ -37,6 +37,8 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+$app->useEnvironmentPath(base_path('environment'));
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
